@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Milena Letz](https://up.htmlacademy.ru/adaptive-individual/2/user/2518049).
-* Наставник: `Екатерина Комнатная`.
+* Наставник: [Екатерина Комнатная](https://htmlacademy.ru/profile/id215761).
 
 ---
 
