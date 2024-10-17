@@ -6,14 +6,27 @@
   <title>Cat energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/favicon-32x32.png" type="image/png">
+  <link rel="apple-touch-icon" href="favicons/apple-icon-60x60.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#ffffff">
   <script src="scripts/index.js" defer></script>
 </head>
 
 <body class="page__body">
   <header class="main-header">
-    <a class="logo" href="#">
-      <img class="logo__image" src="#" width="30" height="38" alt="Логотип Кэт энерджи">
-      <img class="logo__text-image" src="#" width="101" height="18" alt="Название сайта на лого">
+    <a class="logo" href="index.html">
+      <picture>
+        <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="./images/logo-pic-desktop.svg">
+        <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="./images/logo-pic-tablet.svg">
+        <img class="logo__image" src="./images/logo-pic-mobile.svg" width="30" height="38" alt="Логотип Кэт энерджи">
+      </picture>
+    </a>
+    <a class="logo-text" href="index.html">
+      <source width="118" height="21" type="image/svg+xml" media="(min-width: 1440px)" srcset="./images/logo-text-desktop.svg">
+      <source width="101" height="18" type="image/svg+xml" media="(min-width: 768px)" srcset="./images/logo-text-tablet.svg">
+      <img class="logo-text__image" src="./images/logo-text-mobile.svg" width="101" height="18" alt="Название сайта на лого">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
@@ -39,7 +52,11 @@
       <h1 class="introduction-container__title">Функциональное питание для котов</h1>
       <p class="introduction-container__title">Занялся собой? Займись котом!</p>
       <div class="introduction-container__image-wrapper">
-        <img src="#" alt="Корм от кэт энерджи с курицей" width="280" height="270">
+        <picture>
+		      <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="./images/index-can-desktop-2x@1x.png 1x, ./images/index-can-desktop-2x@2x.png 2x">
+          <source width="709" height="609" type="image/jpg" media="(min-width: 768px)" srcset="./images/index-can-tablet-2x@1x.jpg 1x, ./images/index-can-tablet-2x@2x.jpg 2x">
+          <img width="280" height="270" src="./images/index-can-mobile-2x@1x.png" srcset="./images/index-can-mobile-2x@2x.png 2x" alt="Корм от кэт энерджи с курицей">
+        </picture>
       </div>
       <a class="introduction-container__link button button--primary" href="#">подобрать программу</a>
     </section>
@@ -90,8 +107,14 @@
       </dl>
       <p class="example__outgoings">Затраты на питание: 15 000 РУБ.</p>
       <div class="example__comparison comparison">
-        <img class="comparison__image" src="#" alt="Кошка до функционального питания" width="280" height="256">
-        <img class="comparison__image" src="#" alt="Кошка после функционального питания" width="280" height="256">
+        <picture>
+          <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="./images/tablet-cat-before-2x@1x.png 1x, ./images/tablet-cat-before-2x@2x.png 2x">
+          <img class="comparison__image" src="./images/mobile-cat-before-2x@1x.png" srcset="./images/mobile-cat-before-2x@2x.png 2x" alt="Кошка до функционального питания" width="280" height="256">
+        </picture>
+        <picture>
+          <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="./images/tablet-cat-after-2x@1x.png 1x, ./images/tablet-cat-after-2x@2x.png 2x">
+          <img class="comparison__image" src="./images/mobile-cat-after-2x@1x.png" srcset="./images/mobile-cat-after-2x@2x.png 2x" alt="Кошка после функционального питания" width="280" height="256">
+        </picture>
         <button class="comparison__button button button--drag" type="button">
           <span class="visually-hidden">Перетащите кнопку</span>
         </button>
@@ -101,7 +124,11 @@
       <h2 class="visually-hidden">Адрес и место нахождение на карте</h2>
       <p class="address__intro">приглашаем к сотрудничеству дилеров!</p>
       <address class="address__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-      <img class="address__map" src="#" alt="Карта с местом нахождения" width="320" height="362">
+      <picture>
+        <source width="1440" height="400" type="image/jpg" media="(min-width: 1440px)" srcset="./images/location-desktop-2x@1x.jpg 1x, ./images/location-desktop-2x@2x.jpg 2x">
+        <source width="768" height="400" type="image/jpg" media="(min-width: 768px)" srcset="./images/location-tablet-2x@1x.jpg 1x, ./images/location-tablet-2x@2x.jpg 2x">
+        <img class="address__map" src="./images/location-mobile-2x@1x.jpg" srcset="./images/location-mobile-2x@2x.jpg 2x" alt="Карта с местом нахождения" width="320" height="362">
+      </picture>
     </section>
   </main>
   <footer class="main-footer">
@@ -122,7 +149,7 @@
     <div class="main-footer__copyright copyright">
       <p class="copyright__title">HTML Academy</p>
       <a class="copyright__link" href="https://htmlacademy.ru/">
-        <img class="copyright__image" src="#" alt="Логотип академии" width="27" height="34">
+        <img class="copyright__image" src="./images/html-academy-logo.svg" alt="Логотип академии" width="27" height="34">
       </a>
     </div>
   </footer>

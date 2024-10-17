@@ -6,15 +6,27 @@
   <title>Cat energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/favicon-32x32.png" type="image/png">
+  <link rel="apple-touch-icon" href="favicons/apple-icon-60x60.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <script src="scripts/index.js" defer></script>
 </head>
 
 <body class="page__body">
   <header class="main-header">
     <a class="logo" href="index.html">
-      <img class="logo__image" src="#" width="30" height="38" alt="Логотип Кэт энерджи">
+      <picture>
+        <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="./images/logo-pic-desktop.svg">
+        <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="./images/logo-pic-tablet.svg">
+        <img class="logo__image" src="./images/logo-pic-mobile.svg" width="30" height="38" alt="Логотип Кэт энерджи">
+      </picture>
     </a>
-    <a class="main-header__logo-text" href="index.html">cat energy</a>
+    <a class="logo-text" href="index.html">
+      <source width="118" height="21" type="image/svg+xml" media="(min-width: 1440px)" srcset="./images/logo-text-desktop.svg">
+      <source width="101" height="18" type="image/svg+xml" media="(min-width: 768px)" srcset="./images/logo-text-tablet.svg">
+      <img class="logo-text__image" src="./images/logo-text-mobile.svg" width="101" height="18" alt="Название сайта на лого">
+    </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
@@ -41,7 +53,11 @@
       <ul class="catalog__list">
         <li class="catalog__item product">
           <a class="product__link" href="#">
-            <img class="product__image" src="#" alt="Кэт энерджи курица половина килограмма" width="140" height="107">
+            <picture>
+              <source width="161" height="172" type="image/png" media="(min-width: 1440px)" srcset="./images/catalog-1-desktop-2x@1x.png, ./images/catalog-1-desktop-2x@2x.png 2x">
+              <source width="161" height="172" type="image/png" media="(min-width: 768px)" srcset="./images/catalog-1-tablet-2x@1x.png 1x, ./images/catalog-1-tablet-2x@2x.png 2x">
+              <img class="product__image" src="./images/catalog-1-mobile-2x@1x.png" srcset="./images/catalog-1-mobile-2x@2x.png 2x" alt="Кэт энерджи курица половина килограмма" width="68" height="86">
+            </picture>
           </a>
           <a class="product__link" href="#">
             <h3 class="product__title">Cat Energy PRO 500 г</h3>
@@ -64,7 +80,11 @@
         </li>
         <li class="catalog__item product">
           <a class="product__link" href="#">
-            <img class="product__image" src="#" alt="Кэт энерджи курица килограмм" width="140" height="107">
+            <picture>
+              <source width="172" height="196" type="image/png" media="(min-width: 1440px)" srcset="./images/catalog-2-desktop-2x@1x.png, ./images/catalog-2-desktop-2x@2x.png 2x">
+              <source width="172" height="196" type="image/png" media="(min-width: 768px)" srcset="./images/catalog-2-tablet-2x@1x.png 1x, ./images/catalog-2-tablet-2x@2x.png 2x">
+              <img class="product__image" src="./images/catalog-2-mobile-2x@1x.png" srcset="./images/catalog-2-mobile-2x@2x.png 2x" alt="Кэт энерджи курица килограмм" width="84" height="100">
+            </picture>
           </a>
           <a class="product__link" href="#">
             <h3 class="product__title">Cat Energy PRO 1000 г</h3>
@@ -87,7 +107,11 @@
         </li>
         <li class="catalog__item product">
           <a class="product__link" href="#">
-            <img class="product__image" src="#" alt="Кэт энерджи рыба половина килограмма" width="140" height="107">
+            <picture>
+              <source width="161" height="172" type="image/png" media="(min-width: 1440px)" srcset="./images/catalog-3-desktop-2x@1x.png, ./images/catalog-3-desktop-2x@2x.png 2x">
+              <source width="161" height="172" type="image/png" media="(min-width: 768px)" srcset="./images/catalog-3-tablet-2x@1x.png 1x, ./images/catalog-3-tablet-2x@2x.png 2x">
+              <img class="product__image" src="./images/catalog-3-mobile-2x@1x.png" srcset="./images/catalog-3-mobile-2x@2x.png 2x" alt="Кэт энерджи рыба половина килограмма" width="68" height="86">
+            </picture>
           </a>
           <a class="product__link" href="#">
             <h3 class="product__title">Cat Energy PRO 500 г</h3>
@@ -110,7 +134,11 @@
         </li>
         <li class="catalog__item product">
           <a class="product__link" href="#">
-            <img class="product__image" src="#" alt="Кэт энерджи рыба килограмм" width="140" height="107">
+            <picture>
+              <source width="172" height="196" type="image/png" media="(min-width: 1440px)" srcset="./images/catalog-4-desktop-2x@1x.png, ./images/catalog-4-desktop-2x@2x.png 2x">
+              <source width="172" height="196" type="image/png" media="(min-width: 768px)" srcset="./images/catalog-4-tablet-2x@1x.png 1x, ./images/catalog-4-tablet-2x@2x.png 2x">
+              <img class="product__image" src="./images/catalog-4-mobile-2x@1x.png" srcset="./images/catalog-4-mobile-2x@2x.png 2x" alt="Кэт энерджи рыба килограмм" width="84" height="100">
+            </picture>
           </a>
           <a class="product__link" href="#">
             <h3 class="product__title">Cat Energy PRO 1000 г</h3>
@@ -133,7 +161,11 @@
         </li>
         <li class="catalog__item product">
           <a class="product__link" href="#">
-            <img class="product__image" src="#" alt="Кэт энерджи гречка половина килограмма" width="140" height="107">
+            <picture>
+              <source width="161" height="172" type="image/png" media="(min-width: 1440px)" srcset="./images/catalog-5-desktop-2x@1x.png, ./images/catalog-5-desktop-2x@2x.png 2x">
+              <source width="161" height="172" type="image/png" media="(min-width: 768px)" srcset="./images/catalog-5-tablet-2x@1x.png 1x, ./images/catalog-5-tablet-2x@2x.png 2x">
+              <img class="product__image" src="./images/catalog-5-mobile-2x@1x.png" srcset="./images/catalog-5-mobile-2x@2x.png 2x" alt="Кэт энерджи гречка половина килограмма" width="68" height="86">
+            </picture>
           </a>
           <a class="product__link" href="#">
             <h3 class="product__title">Cat Energy SLIM 500 г</h3>
@@ -156,7 +188,11 @@
         </li>
         <li class="catalog__item product">
           <a class="product__link" href="#">
-            <img class="product__image" src="#" alt="Кэт энерджи гречка килограмм" width="140" height="107">
+            <picture>
+              <source width="172" height="196" type="image/png" media="(min-width: 1440px)" srcset="./images/catalog-6-desktop-2x@1x.png, ./images/catalog-6-desktop-2x@2x.png 2x">
+              <source width="172" height="196" type="image/png" media="(min-width: 768px)" srcset="./images/catalog-6-tablet-2x@1x.png 1x, ./images/catalog-6-tablet-2x@2x.png 2x">
+              <img class="product__image" src="./images/catalog-6-mobile-2x@1x.png" srcset="./images/catalog-6-mobile-2x@2x.png 2x" alt="Кэт энерджи гречка килограмм" width="84" height="100">
+            </picture>
           </a>
           <a class="product__link" href="#">
             <h3 class="product__title">Cat Energy SLIM 1000 г</h3>
@@ -179,7 +215,11 @@
         </li>
         <li class="catalog__item product">
           <a class="product__link" href="#">
-            <img class="product__image" src="#" alt="Кэт энерджи рис половина килограмма" width="140" height="107">
+            <picture>
+              <source width="161" height="172" type="image/png" media="(min-width: 1440px)" srcset="./images/catalog-7-desktop-2x@1x.png, ./images/catalog-7-desktop-2x@2x.png 2x">
+              <source width="161" height="172" type="image/png" media="(min-width: 768px)" srcset="./images/catalog-7-tablet-2x@1x.png 1x, ./images/catalog-7-tablet-2x@2x.png 2x">
+              <img class="product__image" src="./images/catalog-7-mobile-2x@1x.png" srcset="./images/catalog-7-mobile-2x@2x.png 2x" alt="Кэт энерджи рис половина килограмма" width="68" height="86">
+            </picture>
           </a>
           <a class="product__link" href="#">
             <h3 class="product__title">Cat Energy SLIM 500 г</h3>
@@ -269,7 +309,11 @@
       <h2 class="visually-hidden">Адрес и место нахождение на карте</h2>
       <p class="address__intro">приглашаем к сотрудничеству дилеров!</p>
       <address class="address__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-      <img class="address__map" src="#" alt="Карта с местом нахождения" width="320" height="362">
+      <picture>
+        <source width="1440" height="400" type="image/jpg" media="(min-width: 1440px)" srcset="./images/location-desktop-2x@1x.jpg 1x, ./images/location-desktop-2x@2x.jpg 2x">
+        <source width="768" height="400" type="image/jpg" media="(min-width: 768px)" srcset="./images/location-tablet-2x@1x.jpg 1x, ./images/location-tablet-2x@2x.jpg 2x">
+        <img class="address__map" src="./images/location-mobile-2x@1x.jpg" srcset="./images/location-mobile-2x@2x.jpg 2x" alt="Карта с местом нахождения" width="320" height="362">
+      </picture>
     </section>
   </main>
   <footer class="main-footer">
@@ -290,7 +334,7 @@
     <div class="main-footer__copyright copyright">
       <p class="copyright__title">HTML Academy</p>
       <a class="copyright__link" href="https://htmlacademy.ru/">
-        <img class="copyright__image" src="#" alt="Логотип академии" width="27" height="34">
+        <img class="copyright__image" src="./images/html-academy-logo.svg" alt="Логотип академии" width="27" height="34">
       </a>
     </div>
   </footer>
