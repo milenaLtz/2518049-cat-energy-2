@@ -1,0 +1,32 @@
+.newsletter__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.newsletter__intro {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  text-align: center;
+}
+
+.newsletter__input::placeholder {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.newsletter__submit-button {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  line-height: 26px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: $primary-green;
+  border: none;
+}
