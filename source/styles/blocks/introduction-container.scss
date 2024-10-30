@@ -1,0 +1,17 @@
+.introduction-container {
+  font-family: $secondary-font;
+  color: #ffffff;
+  text-align: center;
+  background-color: $lighter-green;
+}
+
+.introduction-container__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.introduction-container__subtitle {
+  line-height: 14px;
+  text-transform: uppercase;
+}
