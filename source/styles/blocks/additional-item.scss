@@ -1,0 +1,13 @@
+.additional-item__link {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 16px;
+  color: $darker-grey;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.additional-item__volume,
+.additional-item__price {
+  line-height: 14px;
+}

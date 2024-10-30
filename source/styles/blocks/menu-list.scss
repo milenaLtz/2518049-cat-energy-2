@@ -1,0 +1,15 @@
+.menu-list {
+  @include list-style;
+}
+
+.menu-list__item {
+  font-family: $secondary-font;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.menu-list__item a {
+  color: #000000;
+  text-decoration: none;
+}

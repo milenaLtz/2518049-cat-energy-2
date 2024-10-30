@@ -7,3 +7,9 @@
     src: $font-src;
   }
 }
+
+@mixin list-style($margin: 0, $padding: 0, $list-style-type: none) {
+  margin: $margin;
+  padding: $padding;
+  list-style-type: $list-style-type;
+}
