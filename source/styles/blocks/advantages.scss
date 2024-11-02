@@ -11,3 +11,31 @@
   padding: 0;
   list-style-type: none;
 }
+
+.advantages__item::before {
+  position: absolute;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  background-color: $primary-green;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+  content: "";
+}
+
+.advantages__item--leaf::before {
+  background-image: url("../../icons/stack.svg#icon-leaf");
+}
+
+.advantages__item--pulver::before {
+  background-image: url("../../icons/stack.svg#icon-pulver");
+}
+
+.advantages__item--eat::before {
+  background-image: url("../../icons/stack.svg#icon-eat");
+}
+
+.advantages__item--clock::before {
+  background-image: url("../../icons/stack.svg#icon-clock");
+}

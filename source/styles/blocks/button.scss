@@ -17,3 +17,40 @@
   font-size: 20px;
   line-height: 26px;
 }
+
+.button--drag {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  border: 2px solid #666666;
+  border-radius: 50%;
+}
+
+.button--drag::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 24px;
+  height: 18px;
+  background-color: #666666;
+  mask-image: url("../../icons/stack.svg#drag-arrows");
+  content: "";
+}
+
+.button--drag:hover {
+  border-color: $primary-green;
+}
+
+.button--drag:active {
+  border-color: rgba(94, 170, 47, 0.6);
+}
+
+.button--drag:hover::before {
+  background-color: $primary-green;
+}
+
+.button--drag:active::before {
+  background-color: rgba(94, 170, 47, 0.6);
+}
