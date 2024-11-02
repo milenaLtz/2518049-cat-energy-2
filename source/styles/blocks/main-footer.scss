@@ -1,3 +1,20 @@
 .main-footer {
   background-color: $lightest-grey;
 }
+
+.main-footer__logo-text {
+  display: block;
+  width: 128px;
+  height: 24px;
+  background-color: #111111;
+  mask-image: url("../../icons/stack.svg#footer-logo");
+}
+
+.main-footer__logo-text:hover,
+.main-footer__logo-text:focus {
+  background-color: #3e3e3e;
+}
+
+.main-footer__logo-text:active {
+  background-color: #6b6b6b;
+}

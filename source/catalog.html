@@ -19,11 +19,11 @@
       <picture>
         <source width="202" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="./images/logo-desktop.svg">
         <source width="174" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="./images/logo-tablet.svg">
-        <img class="logo__image" src="./images/logo-pic-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи">
+        <img class="logo__image" src="./images/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи">
       </picture>
     </a>
     <a class="logo-text" href="index.html">
-        <img class="logo-text__image" src="./images/logo-text-mobile.svg" width="101" height="18" alt="Название сайта на лого">
+        <img class="logo-text__image" src="./images/logo-mobile-text.svg" width="101" height="18" alt="Название сайта на лого">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
@@ -316,25 +316,33 @@
   </main>
   <footer class="main-footer">
     <a class="main-footer__logo-text logo-text" href="#">
-      <img src="./images/footer-logo.svg" alt="текст логотипа" width="128" height="24">
+      <span class="visually-hidden">Текст логотипа</span>
     </a>
     <div class="main-footer__social social">
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Вконтакте</a>
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Ютуб</a>
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">Ютуб</span>
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Телеграм</a>
+          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Телеграм</span>
+          </a>
         </li>
       </ul>
     </div>
     <div class="main-footer__copyright copyright">
-      <p class="copyright__title">HTML Academy</p>
       <a class="copyright__link" href="https://htmlacademy.ru/">
-        <img class="copyright__image" src="./images/html-academy-logo.svg" alt="Логотип академии" width="27" height="34">
+        <p class="copyright__title">HTML Academy</p>
+        <div class="copyright__image">
+          <span class="copyright__image visually-hidden">Сайт академии</span>
+        </div>
       </a>
     </div>
   </footer>

@@ -1,4 +1,27 @@
-.copyright__title {
+.copyright__link {
+  display: block;
   font-size: 16px;
   line-height: 20px;
+  color: $special-dark-grey;
+  text-decoration: none;
+}
+
+.copyright__link:active {
+  color: rgba(102, 102, 102, 0.3);
+}
+
+.copyright__image {
+  width: 27px;
+  height: 34px;
+  background-color: #666666;
+  mask-image: url("../../icons/stack.svg#html-academy-logo");
+}
+
+.copyright__link:hover .copyright__image,
+.copyright__link:focus .copyright__image {
+  background-color: $primary-green;
+}
+
+.copyright__link:active .copyright__image {
+  background-color: $lightest-green;
 }
