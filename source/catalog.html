@@ -15,16 +15,18 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="logo" href="index.html">
-      <picture>
-        <source width="202" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="./images/logo-desktop.svg">
-        <source width="174" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="./images/logo-tablet.svg">
-        <img class="logo__image" src="./images/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи">
-      </picture>
-    </a>
-    <a class="logo-text" href="index.html">
-        <img class="logo-text__image" src="./images/logo-mobile-text.svg" width="101" height="18" alt="Название сайта на лого">
-    </a>
+    <div class="main-header__logo logo">
+      <a href="index.html">
+        <picture>
+          <source width="202" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="./images/logo-desktop.svg">
+          <source width="174" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="./images/logo-tablet.svg">
+          <img class="logo__image" src="./images/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи">
+        </picture>
+      </a>
+      <a class="logo__text" href="index.html">
+          <img class="logo__text-image" src="./images/logo-mobile-text.svg" width="101" height="18" alt="Название сайта на лого">
+      </a>
+    </div>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
@@ -248,50 +250,52 @@
     </section>
     <section class="catalog-container__additional-products additional-products">
       <h2 class="additional-products__title">Дополнительные товары</h2>
-      <ul class="additional-products__list">
-        <li class="additional-products__item additional-item">
-        <a class="additional-item__link" href="#">
-          <h3 class="additional-item__title">Сахарозаменитель</h3>
-        </a>
-          <div class="additional-item__price-wrapper">
-            <p class="additional-item__volume">1 упаковка (100 г)</p>
-            <p class="additional-item__price">200 ₽</p>
-          </div>
-          <a class="additional-item__order-button button" href="#">заказать</a>
-        </li>
-        <li class="additional-products__item additional-item">
-        <a class="additional-item__link" href="#">
-          <h3 class="additional-item__title">питьевая вода</h3>
-        </a>
-          <div class="additional-item__price-wrapper">
-            <p class="additional-item__volume">5 литров</p>
-            <p class="additional-item__price">50 ₽</p>
-          </div>
-          <a class="additional-item__order-button button" href="#">заказать</a>
-        </li>
-        <li class="additional-products__item additional-item">
-        <a class="additional-item__link" href="#">
-          <h3 class="additional-item__title">молоко</h3>
-        </a>
-          <div class="additional-item__price-wrapper">
-            <p class="additional-item__volume">1 литр</p>
-            <p class="additional-item__price">100 ₽</p>
-          </div>
-          <a class="additional-item__order-button button" href="#">заказать</a>
-        </li>
-        <li class="additional-products__item additional-item">
-        <a class="additional-item__link" href="#">
-          <h3 class="additional-item__title">витамины</h3>
-        </a>
-          <div class="additional-item__price-wrapper">
-            <p class="additional-item__volume">1 упаковка (30 г)</p>
-            <p class="additional-item__price">300 ₽</p>
-          </div>
-          <a class="additional-item__order-button button" href="#">заказать</a>
-        </li>
-      </ul>
-      <div class="additional-products__advertisement advertisement-wrapper">
-        <p class="advertisement-wrapper__text">Закажите все и получите чехол для кота в подарок!</p>
+      <div class="additional-products__content-wrapper">
+        <ul class="additional-products__list">
+          <li class="additional-products__item additional-item">
+          <a class="additional-item__link" href="#">
+            <h3 class="additional-item__title">Сахарозаменитель</h3>
+          </a>
+            <div class="additional-item__price-wrapper">
+              <p class="additional-item__volume">1 упаковка (100 г)</p>
+              <p class="additional-item__price">200 ₽</p>
+            </div>
+            <a class="additional-item__order-button button" href="#">заказать</a>
+          </li>
+          <li class="additional-products__item additional-item">
+          <a class="additional-item__link" href="#">
+            <h3 class="additional-item__title">питьевая вода</h3>
+          </a>
+            <div class="additional-item__price-wrapper">
+              <p class="additional-item__volume">5 литров</p>
+              <p class="additional-item__price">50 ₽</p>
+            </div>
+            <a class="additional-item__order-button button" href="#">заказать</a>
+          </li>
+          <li class="additional-products__item additional-item">
+          <a class="additional-item__link" href="#">
+            <h3 class="additional-item__title">молоко</h3>
+          </a>
+            <div class="additional-item__price-wrapper">
+              <p class="additional-item__volume">1 литр</p>
+              <p class="additional-item__price">100 ₽</p>
+            </div>
+            <a class="additional-item__order-button button" href="#">заказать</a>
+          </li>
+          <li class="additional-products__item additional-item">
+          <a class="additional-item__link" href="#">
+            <h3 class="additional-item__title">витамины</h3>
+          </a>
+            <div class="additional-item__price-wrapper">
+              <p class="additional-item__volume">1 упаковка (30 г)</p>
+              <p class="additional-item__price">300 ₽</p>
+            </div>
+            <a class="additional-item__order-button button" href="#">заказать</a>
+          </li>
+        </ul>
+        <div class="additional-products__advertisement advertisement-wrapper">
+          <p class="advertisement-wrapper__text">Закажите все и получите чехол для кота в подарок!</p>
+        </div>
       </div>
     </section>
     <section class="catalog-container__newsletter newsletter">
@@ -305,8 +309,10 @@
     </section>
     <section class="catalog-container__address address address--primary">
       <h2 class="visually-hidden">Адрес и место нахождение на карте</h2>
-      <p class="address__intro">приглашаем к сотрудничеству дилеров!</p>
-      <address class="address__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      <div class="address__info-wrapper">
+        <p class="address__intro">приглашаем к сотрудничеству дилеров!</p>
+        <address class="address__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      </div>
       <picture>
         <source width="1440" height="400" type="image/jpg" media="(min-width: 1440px)" srcset="./images/location-desktop-2x@1x.jpg 1x, ./images/location-desktop-2x@2x.jpg 2x">
         <source width="768" height="400" type="image/jpg" media="(min-width: 768px)" srcset="./images/location-tablet-2x@1x.jpg 1x, ./images/location-tablet-2x@2x.jpg 2x">
