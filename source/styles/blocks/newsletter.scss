@@ -1,3 +1,9 @@
+.newsletter {
+  @include global-paddings(20px, 68px, 110px);
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
 .newsletter__title {
   font-family: $secondary-font;
   font-weight: 400;
@@ -12,6 +18,21 @@
   line-height: 24px;
   color: #000000;
   text-align: center;
+}
+
+.newsletter__form {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 376px 256px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 496px 256px;
+    padding: 0 234px;
+  }
 }
 
 .newsletter__input {

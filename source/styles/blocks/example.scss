@@ -1,5 +1,12 @@
 .example {
+  @include global-paddings;
+  display: grid;
+  grid-template-columns: 1fr;
   background-color: $light-grey;
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .example__title {

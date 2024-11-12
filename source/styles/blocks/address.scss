@@ -1,5 +1,29 @@
+.address {
+  position: relative;
+}
+
 .address--primary {
   background-color: $lightest-grey;
+}
+
+.address__info-wrapper {
+  @include global-paddings(20px, 70px, 80px);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media (min-width: $tablet-width) {
+    gap: 308px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 50%;
+    left: 110px;
+    transform: translateY(-50%);
+    gap: 87px;
+    max-width: 405px;
+    background-color: #ffffff;
+  }
 }
 
 .address__intro {

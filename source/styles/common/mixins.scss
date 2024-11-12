@@ -13,3 +13,16 @@
   padding: $padding;
   list-style-type: $list-style-type;
 }
+
+
+@mixin global-paddings($padding-mobile: 20px, $padding-tablet: 30px, $padding-desktop: 110px) {
+  padding: 0 $padding-mobile;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 $padding-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 $padding-desktop;
+  }
+}
