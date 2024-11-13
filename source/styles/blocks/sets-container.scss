@@ -1,1 +1,19 @@
 /* здесь подключите стили sets-container */
+
+.sets-container__wrapper {
+  @include global-paddings;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  max-width: 1220px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+}

@@ -1,1 +1,26 @@
 /* здесь подключите стили main-header */
+
+.main-header__wrapper {
+  @include global-paddings;
+  display: flex;
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+.main-header__logo {
+  height: 65px;
+
+  @media (min-width: $tablet-width) {
+    height: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 115px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .logo__text {
+    display: none;
+  }
+}

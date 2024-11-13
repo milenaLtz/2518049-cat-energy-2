@@ -1,1 +1,11 @@
 /* здесь подключите стили main-nav */
+
+.main-nav {
+  flex: 1;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+}

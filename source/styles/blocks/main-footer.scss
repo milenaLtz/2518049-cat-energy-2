@@ -2,6 +2,18 @@
   background-color: $lightest-grey;
 }
 
+.main-footer__wrapper {
+  @include global-paddings;
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 1220px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 .main-footer__logo-text {
   display: block;
   width: 128px;

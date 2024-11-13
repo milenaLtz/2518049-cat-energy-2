@@ -1,17 +1,72 @@
 .introduction-container {
+  background-color: $lighter-green;
+
+  @media (min-width: $tablet-width) {
+    background-color: #ffffff;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $lighter-green;
+  }
+}
+
+.introduction-container__wrapper {
+  @include global-paddings;
+  max-width: 1220px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
   font-family: $secondary-font;
   color: #ffffff;
   text-align: center;
-  background-color: $lighter-green;
+
+  @media (min-width: $tablet-width) {
+    color: #000000;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 2fr;
+    color: #000000;
+  }
 }
 
 .introduction-container__title {
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+  }
 }
 
 .introduction-container__subtitle {
   line-height: 14px;
   text-transform: uppercase;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+  }
+}
+
+.introduction-container__image-wrapper {
+  @media (min-width: $tablet-width) {
+    order: 4;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 5;
+  }
+}
+
+.introduction-container__button {
+  @media (min-width: $tablet-width) {
+    max-width: 244px;
+    padding: 14px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+  }
 }

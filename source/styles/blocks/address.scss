@@ -2,6 +2,32 @@
   background-color: $lightest-grey;
 }
 
+.address__wrapper {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.address__info-wrapper {
+  @include global-paddings(20px, 70px, 80px);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media (min-width: $tablet-width) {
+    gap: 308px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 50%;
+    left: 110px;
+    transform: translateY(-50%);
+    gap: 87px;
+    max-width: 405px;
+    background-color: #ffffff;
+  }
+}
+
 .address__intro {
   font-family: $secondary-font;
   font-size: 16px;
@@ -13,4 +39,9 @@
 .address__address {
   font-style: normal;
   line-height: 20px;
+}
+
+.address__map-wrapper {
+  display: flex;
+  justify-content: center;
 }
