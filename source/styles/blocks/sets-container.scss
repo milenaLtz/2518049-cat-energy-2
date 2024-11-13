@@ -1,6 +1,6 @@
 /* здесь подключите стили sets-container */
 
-.sets-container {
+.sets-container__wrapper {
   @include global-paddings;
   display: grid;
   grid-template-columns: 1fr;

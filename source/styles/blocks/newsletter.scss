@@ -1,4 +1,4 @@
-.newsletter {
+.newsletter__wrapper {
   @include global-paddings(20px, 68px, 110px);
   max-width: 1220px;
   margin: 0 auto;
@@ -48,6 +48,7 @@
 }
 
 .newsletter__submit-button {
+  padding: 15px 0;
   font-family: $secondary-font;
   font-size: 20px;
   line-height: 26px;

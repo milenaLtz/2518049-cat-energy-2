@@ -1,7 +1,7 @@
-.advantages {
+.advantages__wrapper {
+  @include global-paddings;
   max-width: 1220px;
   margin: 0 auto;
-  padding: 0 20px;
 }
 
 .advantages__title {
@@ -31,11 +31,14 @@
 
 .advantages__item {
   position: relative;
+  padding-left: 80px;
 }
 
 .advantages__item::before {
   position: absolute;
-  right: 0;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
   width: 60px;
   height: 60px;
   background-color: $primary-green;

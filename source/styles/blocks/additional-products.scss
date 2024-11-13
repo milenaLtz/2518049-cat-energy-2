@@ -1,4 +1,4 @@
-.additional-products {
+.additional-products__wrapper {
   @include global-paddings;
   max-width: 1220px;
   margin: 0 auto;
@@ -15,6 +15,7 @@
 .additional-products__content-wrapper {
   display: grid;
   grid-template-columns: 1fr;
+  align-items: center;
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 3fr 1fr;

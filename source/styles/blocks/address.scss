@@ -1,9 +1,11 @@
-.address {
-  position: relative;
-}
-
 .address--primary {
   background-color: $lightest-grey;
+}
+
+.address__wrapper {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .address__info-wrapper {
@@ -37,4 +39,9 @@
 .address__address {
   font-style: normal;
   line-height: 20px;
+}
+
+.address__map-wrapper {
+  display: flex;
+  justify-content: center;
 }

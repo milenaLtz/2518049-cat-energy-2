@@ -1,8 +1,10 @@
 /* здесь подключите стили main-header */
 
-.main-header {
+.main-header__wrapper {
   @include global-paddings;
   display: flex;
+  max-width: 1220px;
+  margin: 0 auto;
 }
 
 .main-header__logo {

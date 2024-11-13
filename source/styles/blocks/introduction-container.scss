@@ -1,21 +1,32 @@
 .introduction-container {
+  background-color: $lighter-green;
+
+  @media (min-width: $tablet-width) {
+    background-color: #ffffff;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $lighter-green;
+  }
+}
+
+.introduction-container__wrapper {
   @include global-paddings;
+  max-width: 1220px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
   font-family: $secondary-font;
   color: #ffffff;
   text-align: center;
-  background-color: $lighter-green;
 
   @media (min-width: $tablet-width) {
     color: #000000;
-    background-color: #ffffff;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 2fr;
     color: #000000;
-    background-color: $lighter-green;
   }
 }
 
@@ -52,10 +63,10 @@
 .introduction-container__button {
   @media (min-width: $tablet-width) {
     max-width: 244px;
+    padding: 14px 0;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 1 / 2;
-    min-height: 54px;
   }
 }

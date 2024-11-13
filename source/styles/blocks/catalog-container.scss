@@ -1,5 +1,10 @@
-.catalog-container__title {
+.catalog-container__title-wrapper {
   @include global-paddings;
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+.catalog-container__title {
   font-family: $secondary-font;
   font-size: 36px;
   font-weight: 400;
