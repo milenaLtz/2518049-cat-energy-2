@@ -1,17 +1,115 @@
+.additional-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 13px 0 19px;
+
+  @media (min-width: $tablet-width) {
+    padding: 26px 38px 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 244px;
+    gap: 40px;
+    padding: 15px 0 17px;
+  }
+}
+
+.additional-item::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #cdcdcd;
+  content: "";
+}
+
+.additional-item:first-child::before {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.additional-item:last-child::after {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #cdcdcd;
+    content: "";
+  }
+}
+
+.additional-item__content-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
 .additional-item__link {
-  font-family: $secondary-font;
-  font-size: 16px;
-  line-height: 16px;
   color: $darker-grey;
   text-decoration: none;
   text-transform: uppercase;
 }
 
 .additional-item__title {
+  margin: 0;
+  margin-bottom: 13px;
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 16px;
   font-weight: 400;
+
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.additional-item__price-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 223px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 285px;
+    margin-bottom: 0;
+  }
 }
 
 .additional-item__volume,
 .additional-item__price {
+  margin: 0;
   line-height: 14px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.additional-item__order-button {
+  text-align: center;
 }

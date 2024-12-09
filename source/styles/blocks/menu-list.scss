@@ -1,15 +1,91 @@
 .menu-list {
   @include list-style;
+  background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: right;
+    gap: 33px;
+  }
 }
 
 .menu-list__item {
+  position: relative;
+  padding: 22px 0 24px;
   font-family: $secondary-font;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 10px 1px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px 0;
+  }
+}
+
+.menu-list__item::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #d9d9d9;
+  content: "";
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.menu-list__item:last-child::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #d9d9d9;
+  content: "";
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.menu-list__item--current::after {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: $primary-green;
+    content: "";
+  }
 }
 
 .menu-list__item a {
   color: #000000;
   text-decoration: none;
+}
+
+.menu-list__item--index-page a {
+  @media (min-width: $desktop-width) {
+    color: #ffffff;
+  }
+}
+
+.menu-list__item--index-page.menu-list__item--current::after {
+  @media (min-width: $desktop-width) {
+    background-color: #ffffff;
+  }
 }
