@@ -1,3 +1,30 @@
+.additional-products {
+  position: relative;
+  padding: 25px 0 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 74px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 72px 0 0;
+  }
+}
+
+.additional-products::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 1px;
+  background-color: #d9d9d9;
+  content: "";
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
 .additional-products__wrapper {
   @include global-paddings;
   max-width: 1220px;
@@ -5,11 +32,67 @@
 }
 
 .additional-products__title {
+  position: relative;
+  margin: 0;
+  margin-bottom: 36px;
   font-family: $secondary-font;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 80px;
+    margin-left: 40px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 80px;
+    margin-left: 0;
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+
+.additional-products__title::after {
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  transform: translateY(-50%);
+  width: 34px;
+  height: 2px;
+  background-color: $primary-green;
+  content: "";
+
+  @media (min-width: $tablet-width) {
+    right: -30px;
+    width: 357px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: -110px;
+    width: 914px;
+  }
+}
+
+.additional-products__title::before {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 2px;
+    background-color: $primary-green;
+    content: "";
+    left: -70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: -110px;
+    width: 70px;
+  }
 }
 
 .additional-products__content-wrapper {
@@ -18,11 +101,19 @@
   align-items: center;
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 1fr 245px;
     gap: 80px;
   }
 }
 
 .additional-products__list {
   @include list-style;
+
+  @media (min-width: $tablet-width) {
+    outline: 1px solid #cdcdcd;
+  }
+
+  @media (min-width: $desktop-width) {
+    outline: none;
+  }
 }
