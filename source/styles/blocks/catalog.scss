@@ -11,11 +11,11 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    gap: 71px 60px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 80px;
+    gap: 73px 80px;
   }
 }
