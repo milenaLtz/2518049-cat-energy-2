@@ -6,16 +6,53 @@
   margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    bottom: 150px;
     width: 560px;
     height: 512px;
     margin: 0 auto;
-    margin-bottom: 0;
+    margin-bottom: 101px;
   }
 
   @media (min-width: $desktop-width) {
     left: 225px;
   }
+}
+
+.comparison__image-wrapper {
+  position: absolute;
+  width: 140px;
+  height: 100%;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    width: 280px;
+  }
+}
+
+.comparison__image-wrapper--before {
+  left: 0;
+}
+
+.comparison__image-wrapper--after {
+  right: 0;
+}
+
+.comparison__image {
+  position: relative;
+  width: 280px;
+  height: 256px;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    height: 512px;
+  }
+}
+
+.comparison__image--before {
+  left: 0;
+}
+
+.comparison__image--after {
+  right: 50%;
 }
 
 .comparison picture {

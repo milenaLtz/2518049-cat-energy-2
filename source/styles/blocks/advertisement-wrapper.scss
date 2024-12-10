@@ -1,13 +1,11 @@
 .advertisement-wrapper {
   position: relative;
-  height: 290px;
   margin-top: 35px;
   background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/image-mobile-2x@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
 
   @media (min-width: $tablet-width) {
-    height: 200px;
     margin-top: 70px;
     background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/image-tablet-2x@1x.jpg");
     background-repeat: no-repeat;
@@ -15,7 +13,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    height: 288px;
     margin-top: 0;
     background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/image-desktop-2x@1x.jpg");
     background-repeat: no-repeat;
@@ -61,26 +58,23 @@
 }
 
 .advertisement-wrapper__text {
-  position: absolute;
-  top: 188px;
   width: 100%;
   margin: 0;
+  padding: 187px 0 43px;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    top: 50%;
-    right: 125px;
-    transform: translateY(-50%);
     width: 161px;
+    padding: 71px 0 69px 421px;
+    text-align: left;
   }
 
   @media (min-width: $desktop-width) {
-    top: 185px;
-    right: 0;
-    transform: none;
     width: 100%;
+    padding: 185px 0 43px;
+    text-align: center;
   }
 }

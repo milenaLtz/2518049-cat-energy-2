@@ -16,10 +16,62 @@
   margin: 0 auto;
 }
 
+.newsletter__title-wrapper {
+  display: flex;
+  gap: 40px;
+  padding-left: 20px;
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    gap: 40px;
+    padding-left: 0;
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 72px;
+    margin-left: 0;
+  }
+}
+
+.newsletter__title-wrapper::before {
+  height: 15px;
+  width: calc(50% - 160px);
+  border-bottom: 2px solid $primary-green;
+  display: none;
+  content: "";
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    height: 14px;
+    width: calc(50% - 355px);
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 17px;
+    width: calc(50% - 650px);
+  }
+}
+
+.newsletter__title-wrapper::after {
+  height: 12px;
+  width: 10px;
+  border-bottom: 2px solid $primary-green;
+  flex-grow: 1;
+  content: "";
+
+  @media (min-width: $tablet-width) {
+    height: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 17px;
+  }
+}
+
 .newsletter__title {
   position: relative;
   margin: 0;
-  margin-bottom: 32px;
   font-family: $secondary-font;
   font-weight: 400;
   font-size: 24px;
@@ -27,54 +79,13 @@
   color: #000000;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 66px;
     font-size: 32px;
     line-height: 32px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 72px;
     font-size: 40px;
     line-height: 40px;
-  }
-}
-
-.newsletter__title::after {
-  position: absolute;
-  top: 50%;
-  right: -20px;
-  transform: translateY(-50%);
-  width: 108px;
-  height: 2px;
-  background-color: $primary-green;
-  content: "";
-
-  @media (min-width: $tablet-width) {
-    right: -70px;
-    width: 456px;
-  }
-
-  @media (min-width: $desktop-width) {
-    right: -125px;
-    width: 1053px;
-  }
-}
-
-.newsletter__title::before {
-  @media (min-width: $tablet-width) {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 30px;
-    height: 2px;
-    background-color: $primary-green;
-    content: "";
-    left: -70px;
-  }
-
-  @media (min-width: $desktop-width) {
-    left: -110px;
-    width: 70px;
   }
 }
 
@@ -142,11 +153,7 @@
 
 .newsletter__submit-button {
   padding: 15px 0;
-  font-family: $secondary-font;
   font-size: 20px;
   line-height: 26px;
-  color: #ffffff;
-  text-transform: uppercase;
-  background-color: $primary-green;
   border: none;
 }
