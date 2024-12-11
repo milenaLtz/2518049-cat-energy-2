@@ -11,29 +11,38 @@
     margin: 0 auto;
     margin-bottom: 101px;
   }
-
-  @media (min-width: $desktop-width) {
-    left: 225px;
-  }
 }
 
 .comparison__image-wrapper {
   position: absolute;
-  width: 140px;
+  display: flex;
+  width: 280px;
   height: 100%;
   overflow: hidden;
+  justify-content: left;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+  }
+}
+
+.comparison__image-wrapper--before {
+  justify-content: left;
+  width: 140px;
 
   @media (min-width: $tablet-width) {
     width: 280px;
   }
 }
 
-.comparison__image-wrapper--before {
-  left: 0;
-}
-
 .comparison__image-wrapper--after {
+  justify-content: right;
   right: 0;
+  width: 140px;
+
+  @media (min-width: $tablet-width) {
+    width: 280px;
+  }
 }
 
 .comparison__image {
@@ -45,14 +54,6 @@
     width: 560px;
     height: 512px;
   }
-}
-
-.comparison__image--before {
-  left: 0;
-}
-
-.comparison__image--after {
-  right: 50%;
 }
 
 .comparison picture {

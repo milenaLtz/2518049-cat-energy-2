@@ -154,13 +154,7 @@
 }
 
 .example__comparison-wrapper {
-  position: relative;
-
   @media (min-width: $desktop-width) {
-    position: relative;
-    width: 0;
-    height: 0;
-    background-color: #ffffff;
+    margin-left: 220px;
   }
 }
-

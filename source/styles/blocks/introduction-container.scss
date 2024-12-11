@@ -34,7 +34,7 @@
   position: relative;
   max-width: 1220px;
   margin: 0 auto;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
   display: grid;
   grid-template-columns: 1fr;
   font-family: $secondary-font;
@@ -42,13 +42,16 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 555px;
+    padding-bottom: 525px;
     color: #000000;
+    text-align: left;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 1fr 2fr;
-    margin-bottom: 265px;
+    display: block;
+    min-height: 554px;
+    padding-right: 826px;
+    padding-bottom: 50px;
     color: #000000;
   }
 }
@@ -71,11 +74,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 1 / 2;
     min-width: 416px;
-    margin-top: 55px;
+    margin-top: 0;
     margin-bottom: 40px;
     padding: 0;
+    padding-top: 55px;
     padding-left: 80px;
   }
 }
@@ -113,33 +116,25 @@
 .introduction-container__image-wrapper {
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 240px;
+    bottom: 0;
     left: 30px;
     order: 4;
-    margin-bottom: -2px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 2 / 3;
-    grid-row: 1 / 5;
-  }
-}
-
-
-.introduction-container__image-wrapper img {
-  @media (min-width: $desktop-width) {
-    position: relative;
-    top: -265px;
-    left: -80px;
+    position: absolute;
+    justify-self: left;
+    margin-bottom: 130px;
+    margin-left: 525px;
   }
 }
 
 .introduction-container__button {
   @media (min-width: $tablet-width) {
     position: relative;
-    top: 30px;
-    left: 90px;
     max-width: 244px;
+    margin-left: 90px;
+    margin-top: 30px;
     padding: 14px 0;
     font-size: 20px;
     line-height: 26px;
@@ -147,9 +142,9 @@
 
   @media (min-width: $desktop-width) {
     position: relative;
-    top: 0;
-    left: 80px;
-    grid-column: 1 / 2;
-    padding: 14px 0;
+    display: inline-block;
+    margin-left: 75px;
+    margin-top: 0;
+    padding: 14px 27px;
   }
 }
