@@ -1,15 +1,107 @@
+.additional-products {
+  position: relative;
+  padding: 26px 0 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 74px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 72px 0 0;
+  }
+}
+
+.additional-products::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 1px;
+  background-color: #d9d9d9;
+  content: "";
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
 .additional-products__wrapper {
   @include global-paddings;
   max-width: 1220px;
   margin: 0 auto;
 }
 
+.additional-products__title-wrapper {
+  display: flex;
+  gap: 40px;
+  padding-left: 20px;
+  margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    gap: 40px;
+    padding-left: 0;
+    margin-bottom: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 80px;
+    margin-left: 0;
+  }
+}
+
+.additional-products__title-wrapper::before {
+  height: 15px;
+  width: calc(50% - 160px);
+  border-bottom: 2px solid $primary-green;
+  display: none;
+  content: "";
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    height: 14px;
+    width: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 17px;
+    width: calc(50% - 650px);
+  }
+}
+
+.additional-products__title-wrapper::after {
+  height: 12px;
+  width: 10px;
+  border-bottom: 2px solid $primary-green;
+  flex-grow: 1;
+  content: "";
+
+  @media (min-width: $tablet-width) {
+    height: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 17px;
+  }
+}
+
 .additional-products__title {
+  position: relative;
+  margin: 0;
   font-family: $secondary-font;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+    line-height: 40px;
+  }
 }
 
 .additional-products__content-wrapper {
@@ -18,11 +110,19 @@
   align-items: center;
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 1fr 245px;
     gap: 80px;
   }
 }
 
 .additional-products__list {
   @include list-style;
+
+  @media (min-width: $tablet-width) {
+    outline: 1px solid #cdcdcd;
+  }
+
+  @media (min-width: $desktop-width) {
+    outline: none;
+  }
 }

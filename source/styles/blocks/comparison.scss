@@ -1,5 +1,70 @@
+.comparison {
+  position: relative;
+  width: 280px;
+  height: 256px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    height: 512px;
+    margin: 0 auto;
+    margin-bottom: 101px;
+  }
+}
+
+.comparison__image-wrapper {
+  position: absolute;
+  display: flex;
+  width: 280px;
+  height: 100%;
+  overflow: hidden;
+  justify-content: left;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+  }
+}
+
+.comparison__image-wrapper--before {
+  justify-content: left;
+  width: 140px;
+
+  @media (min-width: $tablet-width) {
+    width: 280px;
+  }
+}
+
+.comparison__image-wrapper--after {
+  justify-content: right;
+  right: 0;
+  width: 140px;
+
+  @media (min-width: $tablet-width) {
+    width: 280px;
+  }
+}
+
+.comparison__image {
+  position: relative;
+  width: 280px;
+  height: 256px;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    height: 512px;
+  }
+}
+
+.comparison picture {
+  position: absolute;
+}
+
 .comparison__button {
   position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 40px;
   height: 40px;
   background-color: #ffffff;
@@ -19,6 +84,23 @@
   content: "";
 }
 
+.comparison__button::after {
+  position: absolute;
+  top: -110px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 256px;
+  background-color: #666666;
+  border-radius: 2px;
+  content: "";
+
+  @media (min-width: $tablet-width) {
+    height: 512px;
+    top: -238px;
+  }
+}
+
 .comparison__button:hover {
   border-color: $primary-green;
 }
@@ -27,10 +109,12 @@
   border-color: rgba(94, 170, 47, 0.6);
 }
 
-.comparison__button:hover::before {
+.comparison__button:hover::before,
+.comparison__button:hover::after {
   background-color: $primary-green;
 }
 
-.comparison__button:active::before {
+.comparison__button:active::before,
+.comparison__button:active::after {
   background-color: rgba(94, 170, 47, 0.6);
 }

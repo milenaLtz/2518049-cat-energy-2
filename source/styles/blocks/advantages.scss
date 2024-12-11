@@ -1,15 +1,52 @@
 .advantages__wrapper {
   @include global-paddings;
+  position: relative;
   max-width: 1220px;
   margin: 0 auto;
+  margin-bottom: 49px;
+
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 25px;
+  }
+}
+
+.advantages__wrapper::after {
+  position: absolute;
+  display: none;
+  bottom: -47px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #e6e6e6;
+  content: "";
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .advantages__title {
+  margin: 0;
+  margin-bottom: 40px;
   font-family: $secondary-font;
   font-size: 36px;
   font-weight: 400;
   line-height: 40px;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .advantages__list {
@@ -20,18 +57,67 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
-    gap: 37px 137px;
+    gap: 37px 60px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 55px;
+    gap: 83px;
   }
 }
 
 .advantages__item {
   position: relative;
-  padding-left: 80px;
+  padding: 3px 0 3px 80px;
+  min-height: 54px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.advantages__item:first-child {
+  @media (min-width: $tablet-width) {
+    width: 230px;
+  }
+}
+
+.advantages__item:nth-child(2) {
+  @media (min-width: $tablet-width) {
+    width: 246px;
+  }
+}
+
+.advantages__item:nth-child(3) {
+  @media (min-width: $tablet-width) {
+    width: 247px;
+  }
+}
+
+.advantages__item:last-child {
+  @media (min-width: $tablet-width) {
+    width: 249px;
+  }
+}
+
+.advantages__item p {
+  margin: 0;
+  vertical-align: middle;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 146px;
+    padding-bottom: 57px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.advantages__item br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .advantages__item::before {
@@ -46,6 +132,14 @@
   background-position: center;
   background-size: 50%;
   content: "";
+
+  @media (min-width: $tablet-width) {
+    top: 80px;
+    width: 80px;
+    height: 80px;
+    background-position: center;
+    background-size: 35%;
+  }
 }
 
 .advantages__item--leaf::before {
@@ -62,4 +156,33 @@
 
 .advantages__item--clock::before {
   background-image: url("../../icons/stack.svg#icon-clock");
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__item::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    font-family: $secondary-font;
+    font-size: 280px;
+    line-height: 280px;
+    color: $lightest-grey;
+  }
+
+  .advantages__item--leaf::after {
+    content: "1";
+  }
+
+  .advantages__item--pulver::after {
+    content: "2";
+  }
+
+  .advantages__item--eat::after {
+    content: "3";
+  }
+
+  .advantages__item--clock::after {
+    content: "4";
+  }
 }
