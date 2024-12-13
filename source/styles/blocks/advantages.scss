@@ -80,11 +80,19 @@
   @media (min-width: $tablet-width) {
     width: 230px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+  }
 }
 
 .advantages__item:nth-child(2) {
   @media (min-width: $tablet-width) {
     width: 246px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
   }
 }
 
@@ -92,11 +100,19 @@
   @media (min-width: $tablet-width) {
     width: 247px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+  }
 }
 
 .advantages__item:last-child {
   @media (min-width: $tablet-width) {
     width: 249px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
   }
 }
 
@@ -105,10 +121,15 @@
   vertical-align: middle;
 
   @media (min-width: $tablet-width) {
-    padding-top: 146px;
-    padding-bottom: 57px;
+    padding-top: 142px;
+    padding-bottom: 66px;
     font-size: 16px;
     line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 144px;
+    padding-bottom: 64px;
   }
 }
 
@@ -134,7 +155,7 @@
   content: "";
 
   @media (min-width: $tablet-width) {
-    top: 80px;
+    top: 70px;
     width: 80px;
     height: 80px;
     background-position: center;
@@ -161,7 +182,7 @@
 @media (min-width: $tablet-width) {
   .advantages__item::after {
     position: absolute;
-    top: 0;
+    top: -10px;
     right: 0;
     z-index: -1;
     font-family: $secondary-font;
@@ -184,5 +205,17 @@
 
   .advantages__item--clock::after {
     content: "4";
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__item::after {
+    top: -8px;
+    right: -2px;
+  }
+
+  .advantages__item--leaf::after {
+    content: "1";
+    right: 18px;
   }
 }
