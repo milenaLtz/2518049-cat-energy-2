@@ -144,7 +144,7 @@
 .advantages__item::before {
   position: absolute;
   left: 0;
-  top: 50%;
+  top: 51%;
   transform: translateY(-50%);
   width: 60px;
   height: 60px;
@@ -169,14 +169,29 @@
 
 .advantages__item--pulver::before {
   background-image: url("../../icons/stack.svg#icon-pulver");
+  background-size: 45%;
+
+  @media (min-width: $tablet-width) {
+    background-size: 35%;
+  }
 }
 
 .advantages__item--eat::before {
   background-image: url("../../icons/stack.svg#icon-eat");
+  background-size: 45%;
+
+  @media (min-width: $tablet-width) {
+    background-size: 35%;
+  }
 }
 
 .advantages__item--clock::before {
   background-image: url("../../icons/stack.svg#icon-clock");
+  background-size: 45%;
+
+  @media (min-width: $tablet-width) {
+    background-size: 35%;
+  }
 }
 
 @media (min-width: $tablet-width) {
