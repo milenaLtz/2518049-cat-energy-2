@@ -19,10 +19,11 @@
 
 .weight-time-wrapper__title {
   position: absolute;
-  top: 46px;
+  top: 47px;
   left: 50%;
   transform: translateX(-50%);
-  width: 87px;
+  max-width: 77px;
+  padding: 0 10px;
   font-size: 12px;
   line-height: 12px;
   text-align: center;
@@ -32,13 +33,15 @@
   @media (min-width: $tablet-width) {
     top: 63px;
     width: 142px;
+    max-width: 142px;
+    padding: 0;
     font-size: 14px;
     line-height: 14px;
     background-color: #ffffff;
   }
 
   @media (min-width: $desktop-width) {
-    background-color: $light-grey;
+    background-color: $lightest-grey;
   }
 }
 
@@ -53,7 +56,7 @@
 .weight-time-wrapper__description {
   margin: 0;
   margin-bottom: 34px;
-  padding: 15px 0 17px;
+  padding: 14px 0 18px;
   font-family: $secondary-font;
   font-size: 24px;
   line-height: 24px;

@@ -54,7 +54,7 @@
 }
 
 .newsletter__title-wrapper::after {
-  height: 12px;
+  height: 10px;
   width: 10px;
   border-bottom: 2px solid $primary-green;
   flex-grow: 1;
@@ -133,8 +133,10 @@
 }
 
 .newsletter__input {
-  margin-bottom: 16px;
+  margin-bottom: 15px;
   padding: 13px;
+  padding-top: 11px;
+  padding-left: 12px;
   font-family: $secondary-font;
   font-size: 20px;
   line-height: 30px;
@@ -142,6 +144,7 @@
   border: 1px solid #cdcdcd;
 
   @media (min-width: $tablet-width) {
+    padding-top: 13px;
     margin-bottom: 0;
   }
 }

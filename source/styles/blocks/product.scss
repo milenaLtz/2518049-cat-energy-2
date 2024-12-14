@@ -62,7 +62,7 @@
 }
 
 .product__title {
-  width: 60%;
+  max-width: 76px;
   margin: 0;
   margin-top: 2px;
   margin-bottom: 14px;
@@ -71,7 +71,7 @@
   font-weight: 400;
 
   @media (min-width: $tablet-width) {
-    width: 100%;
+    max-width: 135px;
     margin-top: 10px;
     font-size: 20px;
     line-height: 24px;
@@ -79,7 +79,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 100%;
+    max-width: 140px;
     margin-top: 0;
     margin-bottom: 20px;
     font-size: 20px;
