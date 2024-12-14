@@ -4,13 +4,13 @@
   background-color: $light-grey;
 
   @media (min-width: $tablet-width) {
-    padding-top: 35px;
+    padding-top: 40px;
     background: linear-gradient(to top, $light-grey 462px, #ffffff 30%);
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 35px;
-    background: linear-gradient(to bottom, #ffffff 180px, $light-grey 0%);
+    background: linear-gradient(to bottom, #ffffff 172px, $lightest-grey 0%);
   }
 }
 

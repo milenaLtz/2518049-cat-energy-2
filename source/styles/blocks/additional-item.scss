@@ -88,13 +88,13 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 15px;
+  text-align: right;
 
   @media (min-width: $tablet-width) {
     justify-content: end;
     min-width: 223px;
     margin-bottom: 20px;
     margin-right: 3px;
-    text-align: right;
   }
 
   @media (min-width: $desktop-width) {

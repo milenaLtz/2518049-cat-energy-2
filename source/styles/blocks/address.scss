@@ -29,6 +29,7 @@
 }
 
 .address__intro {
+  max-width: 140px;
   margin: 0;
   padding: 26px 0;
   font-family: $secondary-font;
@@ -38,6 +39,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    max-width: 163px;
     padding: 60px 0;
     font-size: 20px;
     line-height: 26px;

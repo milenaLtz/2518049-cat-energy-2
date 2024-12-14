@@ -11,7 +11,6 @@
 
 .menu-list__item {
   position: relative;
-  padding: 22px 0 24px;
   font-family: $secondary-font;
   font-size: 20px;
   line-height: 20px;
@@ -22,13 +21,11 @@
     font-size: 18px;
     line-height: 24px;
     margin-top: 1px;
-    padding: 10px 1px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
-    padding: 10px 0;
   }
 }
 
@@ -96,8 +93,18 @@
 }
 
 .menu-list__item a {
+  display: block;
   color: #000000;
   text-decoration: none;
+  padding: 22px 0 24px;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 1px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 0;
+  }
 }
 
 .menu-list__item--index-page a {
