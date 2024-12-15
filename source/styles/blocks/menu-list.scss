@@ -5,6 +5,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: right;
+    flex-wrap: wrap;
     gap: 33px;
   }
 }
@@ -107,11 +108,34 @@
   }
 }
 
+.menu-list__item:hover a {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.menu-list__item:active a,
+.menu-list__item:focus a {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .menu-list__item--index-page a {
   @media (min-width: $desktop-width) {
     color: #ffffff;
   }
 }
+
+.menu-list__item--index-page:hover a {
+  @media (min-width: $desktop-width) {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.menu-list__item--index-page:active a,
+.menu-list__item--index-page:focus a {
+  @media (min-width: $desktop-width) {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
 
 .menu-list__item--index-page.menu-list__item--current::after {
   @media (min-width: $desktop-width) {

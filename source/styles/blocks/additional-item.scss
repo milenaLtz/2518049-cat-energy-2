@@ -80,6 +80,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    max-width: 325px;
     margin-bottom: 0;
   }
 }
@@ -128,4 +129,8 @@
 
 .additional-item__order-button {
   text-align: center;
+
+  @media (min-width: $desktop-width) {
+    align-self: center;
+  }
 }
