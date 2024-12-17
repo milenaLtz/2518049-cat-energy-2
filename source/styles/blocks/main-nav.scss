@@ -1,5 +1,3 @@
-/* здесь подключите стили main-nav */
-
 .main-nav {
   position: absolute;
   top: 65px;
@@ -16,6 +14,15 @@
 
   @media (min-width: $desktop-width) {
     background-color: transparent;
+  }
+}
+
+.main-nav--nojs {
+  position: static;
+  margin-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
   }
 }
 

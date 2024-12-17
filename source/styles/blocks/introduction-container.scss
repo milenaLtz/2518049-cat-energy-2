@@ -1,14 +1,12 @@
-.introduction-container {
-  position: relative;
-}
-
 .introduction-container::before {
   position: absolute;
   z-index: -1;
-  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/index-background-mobile-2x@1x.jpg");
+  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/index-background-mobile-2x@1x.jpg"), linear-gradient(#504f55, #504f55);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
   width: 100%;
+  min-width: 320px;
   height: 302px;
   content: "";
 
@@ -18,11 +16,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: -170px;
+    top: 0;
     right: 0;
     width: 50%;
     height: 694px;
-    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/index-background-desktop-2x@1x.jpg");
+    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/index-background-desktop-2x@1x.jpg"), linear-gradient(#504f55, #504f55);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #ffffff;
@@ -101,6 +99,7 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 1 / 2;
+    max-width: 416px;
     margin-bottom: 51px;
     padding-left: 80px;
   }

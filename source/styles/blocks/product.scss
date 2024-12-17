@@ -26,7 +26,19 @@
   }
 }
 
+.product__link-image {
+  display: inline-block;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
 .product__link {
+  display: inline-block;
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
@@ -37,15 +49,6 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: center;
-  }
-}
-
-.product__image {
-  @media (min-width: $tablet-width) {
-    position: absolute;
-    top: -70px;
-    left: 50%;
-    transform: translateX(-50%);
   }
 }
 

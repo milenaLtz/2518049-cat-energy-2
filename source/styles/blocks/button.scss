@@ -1,5 +1,5 @@
 .button {
-  padding: 10px 0;
+  padding: 10px;
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
@@ -11,12 +11,12 @@
   cursor: pointer;
 }
 
-.button--primary:hover {
+.button--primary:hover,
+.button--primary:focus {
   background-color: $secondary-green;
 }
 
-.button--primary:active,
-.button--primary:focus {
+.button--primary:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: $secondary-green;
 }
@@ -24,6 +24,12 @@
 .button--secondary {
   color: $special-dark-grey;
   background-color: $lightest-grey;
+}
+
+.button--secondary:hover,
+.button--secondary:active,
+.button--secondary:focus {
+  background-color: #ebebeb;
 }
 
 .button--big-font {

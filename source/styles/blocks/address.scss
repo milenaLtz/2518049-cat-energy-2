@@ -22,6 +22,7 @@
     position: absolute;
     top: 95px;
     left: 110px;
+    z-index: 2;
     gap: 87px;
     max-width: 405px;
     background-color: #ffffff;
@@ -73,12 +74,20 @@
 }
 
 .address__map-wrapper {
+  position: relative;
   display: flex;
   justify-content: center;
   width: 100%;
+  height: 362px;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }
 
 .address__map {
+  position: relative;
+  z-index: 1;
   display: block;
   width: 100%;
   height: 362px;
@@ -87,4 +96,12 @@
   @media (min-width: $tablet-width) {
     height: 400px;
   }
+}
+
+.address__map-picture {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
 }
