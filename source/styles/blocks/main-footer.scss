@@ -40,11 +40,15 @@
   }
 }
 
-.main-footer__logo-text:hover,
-.main-footer__logo-text:focus {
-  opacity: 0.8;
+.main-footer__logo {
+  fill: #111111;
 }
 
-.main-footer__logo-text:active {
-  opacity: 0.6;
+.main-footer__logo-text:hover .main-footer__logo,
+.main-footer__logo-text:focus .main-footer__logo {
+  fill: #3e3e3e;
+}
+
+.main-footer__logo-text:active .main-footer__logo {
+  fill: #6b6b6b;
 }

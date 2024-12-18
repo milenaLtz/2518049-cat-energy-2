@@ -149,7 +149,7 @@
 }
 
 .set__link:active {
-  color: rgba(0, 0, 0, 0.7);
+  opacity: 0.3;
 }
 
 .set__link::before {
@@ -170,6 +170,5 @@
 }
 
 .set__link:active::before {
-  background-color: rgba(0, 0, 0, 0.7);
   mask-image: url("../../icons/stack.svg#arrow-hovered");
 }
