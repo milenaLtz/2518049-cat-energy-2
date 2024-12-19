@@ -8,7 +8,7 @@
   flex: 1;
 
   @media (min-width: $tablet-width) {
-    position: relative;
+    position: static;
     top: 0;
   }
 
@@ -36,4 +36,11 @@
 
 .main-nav--open {
   display: block;
+}
+
+.main-nav__container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: right;
+  }
 }

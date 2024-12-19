@@ -37,6 +37,15 @@
   }
 }
 
+.product__link-image:hover,
+.product__link-image:focus {
+  opacity: 0.6;
+}
+
+.product__link-image:active {
+  opacity: 0.4;
+}
+
 .product__link {
   display: inline-block;
   font-family: $secondary-font;
@@ -50,6 +59,15 @@
     display: flex;
     justify-content: center;
   }
+}
+
+.product__link:hover,
+.product__link:focus {
+  opacity: 0.6;
+}
+
+.product__link:active {
+  opacity: 0.4;
 }
 
 .product__info-wrapper {
